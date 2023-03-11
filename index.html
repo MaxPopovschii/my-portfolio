@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
     <style>
     body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     .w3-row-padding img {margin-bottom: 12px}
@@ -91,7 +92,7 @@
     </div><br>
     
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section" align="center">
+    <button class="w3-button w3-light-grey w3-padding-large w3-section" >
       <i class="fa fa-download"></i> Download Resume
     </button>
     
@@ -114,10 +115,10 @@
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p><input id="subject" class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input id="body" class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
       <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit" onclick="sendEmail()">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
@@ -130,7 +131,6 @@
   <i class="fa fa-facebook-official w3-hover-opacity"></i>
   <i class="fa fa-instagram w3-hover-opacity"></i>
   <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i> 
  <!-- End footer -->
