@@ -6,3 +6,6 @@ function sendEmail() {
     window.location.href = mailtoLink;
   }
   
+function showCV(){
+    window.location.href = "CV.html"
+}
